@@ -26,7 +26,6 @@ class TestAddStock(unittest.TestCase):
         with patch('builtins.input') as mock_input:
             mock_args = ["Test Product 3", 69, "Not a number", 420]
             mock_input.side_effect = mock_args
-
             nwc.add_stock()
             self.assertEqual(nwc.products, [['Desktop', 799.0, 5], ['Laptop A', 1200.0, 6], ['Test Product 3', 69.0, 420]])
 
