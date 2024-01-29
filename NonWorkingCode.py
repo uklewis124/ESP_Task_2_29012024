@@ -43,7 +43,7 @@ def addition():
         s_type = input("Enter the Stock Type which you want to buy: ")
 
         for i in products:
-            if s_type.lower() == i[1].lower():  
+            if s_type.lower() == i[0].lower():  
                 s_check = True
 
                 while not q_check:
